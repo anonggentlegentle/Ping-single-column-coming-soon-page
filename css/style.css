@@ -1,0 +1,129 @@
+:root {
+  --color-blue: hsl(223, 87%, 63%);
+  --color-pale-blue: hsl(223, 100%, 88%);
+  --color-light-red: hsl(354, 100%, 66%);
+  --color-gray: hsl(0, 0%, 59%);
+  --color-very-dark-blue: hsl(209, 33%, 12%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2rem;
+  color: var(--color-gray);
+  display: grid;
+  place-items: center;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  width: 100%;
+}
+
+.main {
+  width: min(90%, 80rem);
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6rem;
+}
+.main__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  align-items: center;
+}
+.main__logo-box {
+  width: 10%;
+}
+.main__heading {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.main__span {
+  color: var(--color-very-dark-blue);
+  font-weight: 700;
+}
+.main__subtitle {
+  color: var(--color-very-dark-blue);
+}
+.main__fieldset {
+  width: 100%;
+  border: none;
+}
+.main__form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+}
+.main__input {
+  width: 100%;
+  border: 1px solid var(--color-gray);
+  padding: 2rem 4rem;
+  border-radius: 100rem;
+  font-size: 2rem;
+  font-family: "Libre Franklin", sans-serif;
+  color: var(--color-very-dark-blue);
+}
+.main__input::placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2rem;
+  opacity: 0.6;
+}
+.main__error {
+  width: 100%;
+  margin-left: 2rem;
+  color: var(--color-light-red);
+  display: none;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.heading--1 {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.btn--submit {
+  width: 100%;
+  border-radius: 100rem;
+  padding: 2rem 2rem;
+  color: #fff;
+  background-color: var(--color-blue);
+  border: none;
+  font-size: 1.8rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.btn--submit:hover {
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=style.css.map */
