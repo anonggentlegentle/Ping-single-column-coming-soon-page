@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <main class="main">
@@ -36,11 +37,12 @@
         </article>
 
         <fieldset class="main__fieldset">
-          <form action="#" class="main__form" id="main__form">
+          <form action="#" class="main__form" id="main__form" novalidate>
             <input
               type="text"
               class="main__input"
               placeholder="Your email address..."
+              required
             />
             <button type="submit" class="btn btn--submit">Notify Me</button>
             <label class="main__error" for="main__form">
@@ -60,10 +62,11 @@
         </article>
       </section>
 
-      <section class="main__footer">
-        <article class="main__socials-container">
+      <footer class="main__footer">
+        <section class="main__socials-container">
           <a href="#" class="main__socials-box">
             <svg
+              class="main__socials-img"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -80,6 +83,7 @@
 
           <a href="#" class="main__socials-box">
             <svg
+              class="main__socials-img"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -96,6 +100,7 @@
 
           <a href="#" class="main__socials-box">
             <svg
+              class="main__socials-img"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -117,9 +122,12 @@
               ></path>
             </svg>
           </a>
-        </article>
-      </section>
+        </section>
+
+        <p class="main__footer-copyright">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </footer>
     </main>
-    &copy; Copyright Ping. All rights reserved.
   </body>
 </html>
